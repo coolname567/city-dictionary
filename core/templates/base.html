@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="menu">
+        <h2>city list</h2>
+        <ol>
+            {% for city in cities%}
+            <li><a href="{% url city %}">{{city}}</a></li>
+            {% endfor%}
+        </ol>
+    </div>
+    <div class="main">
+    {% block content %}
+    {% endblock %}
+    </div>
+</body>
+</html>

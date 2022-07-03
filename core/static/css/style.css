@@ -1,0 +1,34 @@
+h1 {
+    color:goldenrod;
+}
+
+body{
+    background-color:pink;
+}
+
+p{
+    font-size: 25px;
+}
+.menu{
+    background-color:aqua;
+    width: 12%;
+    height:100%;
+    position: absolute;
+    padding: 3%;
+
+}
+.main{
+    width:74%;
+    margin-left: 20%;
+    padding:  3%;
+}
+.menu li{
+    color:red;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu a:hover{color:wheat;}
